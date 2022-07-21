@@ -1,0 +1,2 @@
+# Sample Azure Function for Node.js
+Simple Azure function written following this article [Use Azure Functions to develop Node.js serverless code](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/develop-serverless-apps)
