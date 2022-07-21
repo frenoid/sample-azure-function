@@ -24,6 +24,7 @@ module.exports = async function (context, req) {
             "name": name,
             "sport": sport,
             "message": message,
+            "greetings": "hello - this is new",
             "success": true
         }
 
