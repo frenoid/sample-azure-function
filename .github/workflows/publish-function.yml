@@ -4,6 +4,8 @@ on:
   push:
     branches:
     - 'main'
+    - 'master'
+
 
 env:
   AZURE_FUNCTIONAPP_NAME: normans-test-function   # set this to your application's name
