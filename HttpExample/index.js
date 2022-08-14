@@ -11,8 +11,8 @@ module.exports = async function (context, req) {
         // Add a message to the Storage queue,
         // which is the name passed to the function.
         context.bindings.msg = (req.query.name || req.body.name);
-        console.log("name: " + req.body.message)
-        console.log("message: " + req.body.message)
+        console.log("name: " + req.body.name);
+        console.log("message: " + req.body.message);
         context.res = {
             // status: 200, /* Defaults to 200 */
             body: "Hello " + (req.query.name || req.body.name) + ". You queried at " + dateTime
