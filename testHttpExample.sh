@@ -1,1 +1,1 @@
-curl -X POST -d '{"name": "MyTestCall"}' https://normans-test-function.azurewebsites.net/api/HttpExample
+curl -X POST -d '{"name": "MyTestCall", "message": "hello world"}' https://normans-test-function.azurewebsites.net/api/HttpExample

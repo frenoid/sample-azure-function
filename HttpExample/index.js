@@ -11,6 +11,8 @@ module.exports = async function (context, req) {
         // Add a message to the Storage queue,
         // which is the name passed to the function.
         context.bindings.msg = (req.query.name || req.body.name);
+        console.log("name: " + req.body.message)
+        console.log("message: " + req.body.message)
         context.res = {
             // status: 200, /* Defaults to 200 */
             body: "Hello " + (req.query.name || req.body.name) + ". You queried at " + dateTime
@@ -19,7 +21,7 @@ module.exports = async function (context, req) {
     else {
         context.res = {
             status: 400,
-            body: "Please pass a name on the query string or in the request body"
+            body: "Please pass a name and message in the message body"
         };
     }
 };
